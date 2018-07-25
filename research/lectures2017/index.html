@@ -1,0 +1,174 @@
+<head>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82880233-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<title>
+Joe P. Chen's Research Lectures 2017
+</title>
+</head>
+
+
+<body>
+<h2><a href="../..">Joe P. Chen</a>'s <a href="..">Research</a> Lectures (Summer 2017)</h2>
+<h3><a href=#Cornell>Cornell (June 2017)</a> | <a href=#Bielefeld>Bielefeld (July 2017)</a> </h3>
+
+
+<a title="By Maeshima hiroki (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ACornell_University_from_McGraw_Tower.JPG"><img width="298" alt="Cornell University from McGraw Tower" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Cornell_University_from_McGraw_Tower.JPG/512px-Cornell_University_from_McGraw_Tower.JPG"/></a>&nbsp;
+&nbsp;
+<a title="By N7legion (Own work Eigene Aufnahme) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AUniversit%C3%A4t_Bielefeld_Luftaufnahme.jpg"><img width="336" alt="Universität Bielefeld Luftaufnahme" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Universit%C3%A4t_Bielefeld_Luftaufnahme.jpg/512px-Universit%C3%A4t_Bielefeld_Luftaufnahme.jpg"/></a>
+<br>
+</br>
+
+
+<hr> 
+
+<a name="Cornell">
+<h2>Tutorial: Probability on Fractals (June 15~16, 2017)</h2>
+<h4>Delivered at the <a href="http://www.math.cornell.edu/~fractals">Cornell Fractals 6 Conference</a>, Ithaca, NY.</h4>
+
+<p>
+<b>Lecture plans:</b>
+<br></br>
+This set of two lectures covered the probabilistic aspect of analysis on fractals, complementing the tutorials by Bob Strichartz.
+It covers the essential ideas needed to read, for instance, <a href="https://www.math.ubc.ca/~barlow/">Martin Barlow</a>'s St. Flour lecture notes <a href="https://www.math.ubc.ca/~barlow/preprints/stfr.pdf"><i>"Diffusions on fractals"</i></a>,
+and <a href="http://www.kurims.kyoto-u.ac.jp/~kumagai">Takashi Kumagai</a>'s St. Flour lecture notes <a href="http://www.kurims.kyoto-u.ac.jp/~kumagai/StFlour-TK.pdf"><i>"Random walks on disordered media and their scaling limits"</i></a>.
+<br></br>
+Using the language of Markov chains, I explained the significance of harmonic functions, Green's functions, and heat kernels in the study of
+diffusions on fractals. I will also touched on various types of stopping times in Markov processes (hitting times, commute times, etc.) and their
+connections to electric network theory.
+</p>
+
+<p><b>Lecture 1 (06/15/2017):</b> Covered the basics of Markov chains, focusing on symmetric random walks on unweighted graphs. Using one-step calculations we
+connected hitting probabilities to harmonic functions, and expected hitting times to Laplacian-1 functions (integrals of Green's functions). 
+Motivating example: gambler's ruin (in 1D).</p>
+
+<p><b>Lecture 2 (06/16/2017):</b> Generalization to symmetric random walks on weighted graphs. Green's functions and heat kernels. Explicit calculations on SG (showing the time scale factor 5).
+Connections to effective resistance: escape probability, commute-time identity. 
+</p>
+  
+<p>
+Besides the tutorial, I gave a 30-minute talk (<a href="http://www.math.cornell.edu/~fractals/current/schedule.php">on June 14</a>) entitled
+<i>"Strong shape theorems in cellular automata models on the Sierpinski gasket,"</i>
+covering recent results obtained with my Colgate undergraduate mentee Jonah Kudler-Flam. <font style="border-style:solid; border-color:red" color="red"><small>PDF</small></font> <a href="http://www.math.cornell.edu/~fractals/6/slides/Chen.pdf">Talk slides</a>
+</p>
+
+
+<hr>
+
+<a name="Bielefeld">
+<h2>Scaling limits of particle systems on nonsmooth spaces (July 2017)</h2>
+<h3><a href=#outline>Outline</a> | <a href=#plan>Synopsis</a> | <a href=#ref>References</a> </h3>
+
+<img src="SGReservoir.png" height="220"> <img src="sandpile_1944.png" height="220"> <img src="ASMSGRad.png" height="220">
+
+
+<h4>Delivered as a 5 X 90-minute scientific block course to graduate students at <a href="https://www.math.uni-bielefeld.de/">Universit&auml;t Bielefeld</a>, Germany.<br>
+Sponsored by the <a href="https://irtg.math.uni-bielefeld.de/">Bielefeld-Seoul IRTG 2235</a>
+<i>"Searching for the regular in the irregular: Analysis of singular and random systems."</i>
+</h4>
+
+<p>
+<b>Dates:</b>
+Mi. 12.07, Fr. 14.07, Mo. 17.07, Mi. 19.07, Fr. 21.07.<br>
+<b>Times:</b> Mo. & Mi. 12:15~14:00; Fr. 10:15~12:00.<br>
+<b>Room:</b> D5-153.
+</p>
+
+<a name="outline">
+<p>
+<b>Actual lecture outline:</b>
+<ul>
+<li><font color="blue"><b>Lecture 1 (12.07.2017)</b>: Reversible Markov chains on a countable state space = symmetric random walks on a weighted graph. Laplacian and Dirichlet energy. Harmonic functions. Hitting probabilities and times. Green's functions.</font>
+<li><font color="blue"><b>Lecture 2 (14.07.2017)</b>: Green's function and Green's density. Worked examples: gambler's ruin in 1D, Sierpinski gasket. Electric network theory: potential, current, and resistance.
+Thomson's (Dirichlet's) principle (proved using analysis ideas). Connection between electric networks and reversible Markov chains: escape probability, on-diagonal Green's function.</font>
+<li><font color="blue"><b>Lecture 3 (17.07.2017)</b>: Commute time identity. Example calculation: Vicsek tree (showing the time scale factor is \(15^N\) on a level-\(N\) pre-fractal graph). Network reduction (via Schur complements). Thomson's principle proved using network reduction.</font> 
+<li><font color="blue"><b>Lecture 4 (19.07.2017)</b>: Exclusion process basics. Octopus inequality (Caputo, Liggett, Richthammer). Moving particle lemma (C.). A rough proof sketch of the hydrodynamic limit of the exclusion process on the Sierpinski gasket (C., Hinz, Teplyaev).</font><br>
+<font style="border-style:solid; border-color:red" color="red"><small>PDF</small></font> <a href="http://math.colgate.edu/~jpchen/research/CUNYProbabilitySeminar2017.pdf">Slides used in this lecture (updated 10.10.2017)</a>
+<li><font color="blue"><b>Lecture 5 (21.07.2017)</b>: Limit shape of internal DLA on the Sierpinski gasket (C., Huss, Sava-Huss, Teplyaev). Some potential theoretic ideas behind the proof: harmonic measure, elliptic Harnack inequality. Limit shape universality of abelian networks on SG (C., Kudler-Flam).</font><br>
+<font style="border-style:solid; border-color:red" color="red"><small>PDF</small></font> <a href="http://math.colgate.edu/~jpchen/research/PotsdamTalk_JoeChen_2017.pdf">Slides used in this lecture</a>
+
+</ul>
+</p>
+
+<a name="plan">
+<p>
+<b>Synopsis:</b>
+<br></br>
+I will start by discussing the basics of particle systems on graphs and their connections to
+the random walk process and the relevant potential theory. Emphasis will be on results and techniques which are applicable to non-transitive graphs.
+<br></br>
+
+After the introductory lecture(s), I will describe two classes of particle systems for which the scaling limits are mostly known on Euclidean lattices,
+but whose generalizations to fractal lattices have only been established recently.
+</p>
+
+<ul>
+ <li>The boundary-driven exclusion process.
+ <li>Sandpile and aggregation models.
+</ul>
+
+<p>
+For concreteness, I will use the Sierpinski gasket as the model graph, and describe the limit theorems for the aforementioned processes.
+Though I will say a few words about (variants of) these models on other fractal (or general weighted) graphs, 
+and mention connections to aspects of non-equilibrium statistical mechanics.
+</p>
+
+<p>This course assumes working knowledge of real analysis and probability theory at the advanced undergraduate / intro graduate level.
+Exposure to Markov chains is useful but not necessary.
+</p>
+
+<a name="ref">
+<p><b>References:</b><br></br>
+Introductory materials are drawn from a variety of sources.
+<ul>
+<li><font style="border-style:solid; border-color:red" color="red"><small>PDF</small></font> <a href="https://math.dartmouth.edu/~doyle/docs/walks/walks.pdf">Doyle and Snell, "Random Walks and Electric Networks."</a> (A classic, suitable for undergrads.)
+<li><font style="border-style:solid; border-color:red" color="red"><small>PDF</small></font> <a href="http://pages.uoregon.edu/dlevin/MARKOV/markovmixing.pdf">Levin, Peres, and Wilmer, "Markov chains and mixing times."</a> See Chapters 9 and 10.
+<li><a href="http://mypage.iu.edu/~rdlyons/prbtree/prbtree.html">Lyons and Peres, "Probability on Trees and Networks."</a> See Chapter 2.
+</ul>
+My lectures on the exclusion process are based on the following references:
+<ul>
+<li>For an overview of results, see <a href="https://arxiv.org/abs/1702.03376">Chen, Hinz, and Teplyaev, "From non-symmetric particle systems to non-linear PDEs on fractals." arXiv:1702.03376</a>.
+<li><a href="http://www.ams.org/journals/jams/2010-23-03/S0894-0347-10-00659-4/">Caputo, Liggett, and Richthammer, "Proof of Aldous' spectral gap conjecture." Journal of the AMS (2010).</a> <a href="https://www.stat.berkeley.edu/~aldous/Research/OP/sgap.html">Here is Aldous' original statement of the spectral gap conjecture.</a>
+<li><a href="http://dx.doi.org/10.1214/17-ECP82">Chen, "The moving particle lemma for the exclusion process on a weighted graph." Electron. Commun. Probab. (2017)</a>.
+<li><a href="https://arxiv.org/abs/1705.10290">Chen, "Local ergodicity in the exclusion process on an infinite weighted graph." arXiv:1705.10290</a>.
+<li><a href="http://patriciamath.wixsite.com/patricia">Patricia Gon&ccedil;alves</a>' lectures at the Institut Henri Poincar&eacute; "Hydrodynamics for symmetric exclusion in contact with reservoirs" (May 2017). 
+<font style="background-color:red" color="white"><small>YouTube</small></font> Lectures: <a href="https://www.youtube.com/watch?v=QTPynCmpaJ0">Part 1</a>, <a href="https://www.youtube.com/watch?v=bLydmcqhY_Y">Part 2</a>, <a href="https://www.youtube.com/watch?v=cDFxIIwEyTc">Part 3</a>. 
+<font style="border-style:solid; border-color:red" color="red"><small>PDF</small></font>  <a href="https://indico.math.cnrs.fr/event/844/material/slides/6.pdf">Slides</a>.
+<li>For an earlier work (on the hydrodynamics of the zero-range process on SG), see Jara, Comm. Math. Phys. (2009); <a href="https://arxiv.org/abs/0805.0380">arXiv:0805.0380</a>.
+</ul>
+
+My lectures on sandpile/aggregation models are based on the following references:
+<ul>
+<li><a href="http://www.ams.org/journals/bull/2017-54-03/S0273-0979-2017-01573-X/home.html">Levine and Peres, "Laplacian growth, sandpiles and scaling limits." Bulletin of the AMS (2017)</a>.
+<li><a href="http://projecteuclid.org/euclid.aop/1176989542">Lawler, Bramson, and Griffeath, "Internal Diffusion limited Aggregaton." Ann. Probab. (1992)</a>.
+<li><a href="https://projecteuclid.org/euclid.ecp/1465315589">Duminil-Copin, Lucas, Yadin, and Yehudayoff, "Containing internal diffusion limited aggregation." Electron. Commun. Probab. (2013)</a>
+<li>Levine and Peres, "Strong Spherical Asymptotics for Rotor-Router Aggregation and the Divisible Sandpile." Pot. Anal. (2009); <a href="https://arxiv.org/abs/0704.0688">arXiv:0704.0688</a>.
+<li>See <a href="http://www.math.cornell.edu/~levine/">Lionel Levine's page</a> for more background info and animations.
+<li>For shape theorems on SG, see <a href="https://arxiv.org/abs/1702.04017">arXiv:1702.04017</a> (IDLA, joint work with Huss, Sava-Huss, and Teplyaev), <a href="https://arxiv.org/abs/1702.08370">arXiv:1702.08370</a> (divisible sandpiles, Huss and Sava-Huss). The limit shape universality result (joint work with Kudler-Flam) will be advertised.
+</ul>
+
+My goal is to type up these lecture notes into a manuscript during the 2017~18 academic year.
+</p>
+<p>
+<b>Acknowledgements.</b> I am grateful to <a href="https://www.math.uni-bielefeld.de/kassmann/index.php?lang=en">Prof. Dr. Moritz Kassmann</a> and <a href="https://www.math.uni-bielefeld.de/~mhinz/webpage_nov2014.html">Dr. Michael Hinz</a> for arranging this opportunity.
+</p>
+
+<hr>
+
+<a href="..">Back to JPC's research page</a><br>
+<a href="../..">Back to JPC's homepage</a>
+</body>
