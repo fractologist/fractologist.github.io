@@ -59,9 +59,8 @@ u {
 
 .content {
   padding: 0 18px;
-  max-height: 0;
+  display: none;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
 </style>
@@ -649,13 +648,15 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
+    if (content.style.display === "block") {
+      content.style.display = "none";
     } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
+      content.style.display = "block";
+    }
   });
 }
 </script>
+
+
 </body>
 </html>
