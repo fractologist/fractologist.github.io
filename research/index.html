@@ -16,28 +16,6 @@
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("button").click(function(){
-    $("p").slideToggle();
-    });
-});
-</script>
-
-<!--
-<style type="text/css">
-u {    
-    border-bottom: 1px dotted #000;
-    text-decoration: none;
-}
-
-#hide {
-     display:none;
-}
-</style>
--->
-
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -57,10 +35,23 @@ u {
   background-color: #555;
 }
 
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
 .content {
   padding: 0 18px;
-  display: none;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
 </style>
@@ -96,20 +87,9 @@ Joe P. Chen's Research Page
 </ul>
 </h5>
 
-
-<button type="button" class="collapsible">Past Minicourses</button>
+<button class="collapsible">Description of My Research</button>
 <div class="content">
-  <p>
-  <font color="red">2018-19:</font> <a href="lectures1819">Research lectures at Bielefeld (Autumn 2018) and Lisboa (Winter 2019)</a>
-  <br>
-  <font color="red">2017:</font> <a href="lectures2017">Research tutorials & lectures at Cornell (June) and Bielefeld (July)</a>
-  </p> 
-</div>
-
-
-<hr>
-
-
+<p>
 My research specialty surrounds the <b>analysis of probability models</b>---in particular, <b><a href="https://en.wikipedia.org/wiki/Interacting_particle_system">interacting particle systems</a></b> and <b><a href="http://www.ams.org/journals/bull/2017-54-03/S0273-0979-2017-01573-X/">Laplacian growth models</a></b>---on state spaces which are bounded in distance determined by <b>electrical resistance</b>. 
 By studying explicit models and taking the right <b>space-time scaling limits</b>, I can rigorously derive <b>(<a href="https://en.wikipedia.org/wiki/Stochastic_partial_differential_equation">stochastic</a>) <a href="https://en.wikipedia.org/wiki/Partial_differential_equation">partial differential equations</a></b> or prove <b><a href="https://icerm.brown.edu/programs/sp-s15/w3/">limit shape theorems</a></b> on <a href="https://bookstore.ams.org/memo-216-1015">these spaces</a>.
 These mathematical results capture various laws of nature, such as heat flow, wave propagation, charged particles in an electromagnetic field, and fluid dynamics.
@@ -134,21 +114,24 @@ While the models I study may seem disparate, my approach is ultimately grounded 
 Papers <a href="#paper1"><font style="background-color:red" color="white">1</font></a>, <a href="#paper6"><font style="background-color:red" color="white">6</font></a>, <a href="#paper8"><font style="background-color:red" color="white">8</font></a>, <a href="#paper14"><font style="background-color:red" color="white">14</font></a>, <a href="#paper17"><font style="background-color:red" color="white">17</font></a> involved notable contributions from undergraduate students in the form of numerical findings, conjectures, and lemmas, which were then turned into theorems by the senior author(s).
 <br></br>
 </ul>
+</p>
+</div>
 
-<hr>
 
-<a name="fund"><h3>Funding</h3></a>
-
+<button class="collapsible">Funding</button>
+<div class="content">
+<p>
 As of July 1, 2019, my research is supported in part by the National Science Foundation (NSF) DMS Probability program grant <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1855604">DMS-1855604, "Stochastic dynamics on large-scale networks" (2019-22).</a><br></br>
 I also acknowledge partial support from the 
 <a href="https://www.simonsfoundation.org">Simons Foundation</a> 
 (via a <a href="https://www.simonsfoundation.org/grant/collaboration-grants-for-mathematicians/?tab=awardees">Collaboration Grant for Mathematicians</a>, 2017-19)
 and
 the Research Council of Colgate University (Major grant 2017-18, Picker Research Fellowship 2019-20).
+</p>
+</div>
 
-<hr>
-
-<h3>Presentations <small>on my most current research projects</small></h3>
+<button class="collapsible">Recent Presentations</button>
+<div class="content">
 <ul>
 <li><a href="AMSBinghamton_Guo_Oct2019.pdf">Spectral decimation of the magnetic Laplacian on the Sierpinski gasket</a> <i>(AMS Sectional Meeting @ Binghamton U, Oct '19, written and delivered by Ruoyu Guo '19)</i>.
 <li><a href="SPA_July2019.pdf">Nonequilibrium fluctuations in the boundary-driven exclusion process on a resistance space</a> <i>(Stochastic Processes & their Applications conference @ Northwestern University, July '19)</i>.
@@ -156,13 +139,28 @@ the Research Council of Colgate University (Major grant 2017-18, Picker Research
 <li><a href="UChicagoApr2019.pdf">Laplacian growth and sandpiles on the Sierpinski gasket</a> <i>(UChicago Probability Seminar, Apr '19)</i>.
 <li><a href="http://www.birs.ca/events/2015/5-day-workshops/15w5083/videos/watch/201509291203-Chen.html">[VIDEO] An abstract version of Bohr’s semiclassical asymptotic formula, with application to fractal spaces</a> <i>(Slightly dated, BIRS-CMO Oaxaca, Sep ‘15)</i>.
 </ul> 
+</div>
+
+
+
+<button class="collapsible">Recent Invited Minicourses</button>
+<div class="content">
+  <p>
+  <font color="red">2018-19:</font> <a href="lectures1819">Research lectures at Bielefeld (Autumn 2018) and Lisboa (Winter 2019)</a>
+  <br>
+  <font color="red">2017:</font> <a href="lectures2017">Research tutorials & lectures at Cornell (June) and Bielefeld (July)</a>
+  </p> 
+</div>
+
+
+
+
 
 <hr>
 
 <a name="papers"><h2>Research papers <small>(see also my pages on <a href="http://arxiv.org/a/chen_j_5">arXiv</a>, <a href="http://www.ams.org/mathscinet/MRAuthorID/1058850">MathSciNet</a>, <a href="https://zbmath.org/authors/?q=ai:chen.joe-p">zbMATH</a>, <a href="https://orcid.org/0000-0001-6749-439X">ORCID</a>)</small></h2>
 <h4><font style="background-color:red" color="white">&#9671</font> <font color="red">indicates work involving undergraduate student(s)</font></h4>
 
-<button>Show/Hide abstracts</button>
 
 <table>
 <table style="width:100%">
@@ -179,7 +177,7 @@ the Research Council of Colgate University (Major grant 2017-18, Picker Research
 </tr>
 <tr>
 <td></td>
-<td><p id="hide">
+<td>
 This paper is a continuation of <a href="#paper16"><font style="background-color:black" color="white">16</font></a>, and the focus is on characterizing the non-equilibrium density fluctuations when the 3 reservoir rates are not identical.
 More precisely, under diffusive scaling we establish: the hydrostatic limit for the stationary measures of the discrete processes;
 and subsequential convergence of non-equilibrium density fluctuations, which can be upgraded to full convergence to an Ornstein-Uhlenbeck process if the initial-time fluctuations are centered Gaussian.
@@ -200,7 +198,7 @@ To prove all the above, we need to carefully estimate the two-point correlation 
 </tr>
 <tr>
 <td></td>
-<td><p id="hide">
+<td>
 The \(\varepsilon\)-mixing time of an ergodic Markov chain is the first time the total variation distance between the chain distribution and the stationary distribution becomes less than \(\varepsilon\).
 Given a sequence of Markov chains with \(\varepsilon\)-mixing times \(\{t_N^{\rm mix}(\varepsilon)\}_N\), we say that they exhibit <i>cutoff</i> if there exists a sequence of time scales \(\{t_N\}_N\) such that for every \(\varepsilon\in (0,1)\), \(t_N^{\rm mix}(\varepsilon) / t_N \to 1\).  
 In this paper we prove a general theorem on cutoffs for the symmetric exclusion processes on graphs with open boundaries, under the natural assumption that the graphs converge geometrically and spectrally to a compact metric measure space with Dirichlet boundary condition.
@@ -221,7 +219,7 @@ The proof is by construction of a "cutoff martingale," the analysis thereof usin
 </tr>
 <tr>
 <td></td>
-<td><p id="hide">
+<td>
 This paper gives a non-technical summary and interpretation of the main results from <a href="#paper16"><font style="background-color:black" color="white">16</font></a> and <font style="background-color:black" color="white">P1</font>,
 and also extends the analysis of <font style="background-color:black" color="white">P1</font> to mixed boundary reservoir dynamics.
 </td>
@@ -233,7 +231,7 @@ and also extends the analysis of <font style="background-color:black" color="whi
 </tr>
 <tr>
 <td></td>
-<td><p id="hide">
+<td>
 In this paper we prove a general theorem on cutoffs for the symmetric exclusion processes on graphs with no boundary (torus) or with closed (Neumann) boundaries.
 The theorem works in any dimension.
 </td>
@@ -267,7 +265,7 @@ The theorem works in any dimension.
 </tr>
 <tr>
 <td></td>
-<td><p id="hide">
+<td>
 In this paper we provide a recursive construction of the magnetic spectrum on the Sierpinski gasket under uniform magnetic field, thereby solving the "Hofstadter-Sierpinski spectral problem" in its entirety.
 The renormalization map is a 3-parameter map involving non-rational functions. (As far as we know, this is the first time spectral decimation has been carried out with non-rational functions. We succeeded in carrying out the decimation in all scenarios, including the exceptional set for spectral decimation.)
 In special cases, we can also compute determinants of the magnetic Laplacians on the gasket, which induce a random spatial process called the cycle-rooted spanning forest (CRSF) process, cf. <a href="https://projecteuclid.org/euclid.aop/1318940787">Rick Kenyon's 2011 Annals of Probability paper</a>.<br></br>
@@ -286,7 +284,7 @@ In special cases, we can also compute determinants of the magnetic Laplacians on
 </tr>
 <tr>
 <td></td>
-<td><p id="hide">
+<td>
 In this paper we prove a LLN and a CLT for the particle density in the boundary-driven exclusion process on the Sierpinski gasket.
 Depending on the strength of the boundary reservoirs' dynamics, the particle density evolves according to the heat equation with Dirichlet, Robin, or Neumann boundary condition.
 In the equilibrium setting, we prove that the density fluctuations satisfy the Ornstein-Uhlenbeck equation with the corresponding boundary condition.<br>
@@ -303,7 +301,7 @@ In the equilibrium setting, we prove that the density fluctuations satisfy the O
 </tr>
 <tr>
 <td></td>
-<td><p id="hide">
+<td>
 In this paper I prove, on every strongly recurrent weighted graph, the coarse-graining arguments needed to pass from the microscopic observables (in the exclusion process) to the corresponding macroscopic averages.
 The two-blocks estimate is based on the moving particle lemma established in HydroSG Part I.<br>
 <a href="SSEPBoundaryAnimation.gif"><img src="SSEPBoundaryAnimation.gif" height="134"></a><br>
@@ -337,7 +335,7 @@ The two-blocks estimate is based on the moving particle lemma established in Hyd
 </a>
 <tr>
 <td></td>
-<td><p id="hide">
+<td>
 In this paper we solve the rotor-router aggregation problem and the abelian sandpile growth problem on the graphical Sierpinski gasket (SG) when particles are launched from the corner vertex.
 The sandpile growth problem is solved exactly via a renormalization scheme involving self-similar sandpile tiles.
 In the process we also prove the identity elements of the sandpile groups of subgraphs of SG (with two different boundary conditions).
@@ -372,12 +370,10 @@ In the process we also prove the identity elements of the sandpile groups of sub
 <tr>
 <td></td>
 <td>
-<p id="hide">
 In this paper we prove that starting from a corner vertex of SG, an internal diffusion-limited aggregation process (where successive i.i.d. random walks deposit upon first exit from the previous cluster) fills balls in the graph metric with probability 1.<br><br>
 <a href="IDLASG.gif"><img src="IDLA_SG.gif" height="200"></a><br></br>
 See also <a href="https://arxiv.org/abs/1702.08370">the shape theorem for divisible sandpiles on SG</a> by Huss and Sava-Huss.<br>
 <br></br>
-</p>
 </td>
 </tr>
 
@@ -417,15 +413,7 @@ and <a href="https://alexander-teplyaev.uconn.edu">Alexander Teplyaev</a>.
 <font color="dark gray">In A. Eberle <i>et al.</i> (Eds.), <a href="https://www.springer.com/us/book/9783319749280"><i>Stochastic Partial Differential Equations and Related Fields: In Honor of Michael R&#246;ckner SPDERF, Bielefeld, Germany, October 10 -14, 2016</i>, Springer Proceedings in Mathematics & Statistics (2018)</a>, pp. 503-513.</font>
 </td>
 </tr>
-<tr>
-<td></td>
-<td>
-<p id="hide">
-This is a summary of a series of four papers (HydroSG Parts I~IV) concerning the hydrodynamic limit of the boundary-driven exclusion process on a resistance space (the Sierpinski gasket being the model space).
-<br></br>
-</p>
-</td>
-</tr>
+
 
 
 <tr>
@@ -441,13 +429,11 @@ This is a summary of a series of four papers (HydroSG Parts I~IV) concerning the
 <tr>
 <td></td>
 <td>
-<p id="hide">
 <br>
 <a href="pqeigvtreeD.jpg"><img src="pqeigvtreeD.jpg" height="140"></a><br><br>
 In this paper we give rigorous meaning to regularized logarithmic Laplacian determinants on several fractal graphs, using properties of the spectral <a href="https://en.wikipedia.org/wiki/Zeta_function_(operator)">zeta function</a>.
 In two examples (the double-sided SG and the double-sided pq model) we find that the logarithmic discrete graph Laplacian determinant has a leading-order term whose coefficient is the <a href="https://arxiv.org/abs/math/0212165">asymptotic complexity constant in the enumeration of spanning trees</a>, and whose lagging term corresponds to the regularized logarithmic Laplacian determinant.
 Our results generalize those of <a href="https://projecteuclid.org/euclid.nmj/1273496987">Chinta, Jorgenson, and Karlsson on the discrete tori</a>, and have implications for quantum fields and statistical mechanics on fractals.
-</p>
 </td>
 </tr>
 
@@ -469,13 +455,11 @@ Our results generalize those of <a href="https://projecteuclid.org/euclid.nmj/12
 <tr>
 <td></td>
 <td>
-<p id="hide">
 <br>
 <a href="MPL.png"><img src="MPL.png" height="400"></a>
 <br>
 I prove in this paper a Sobolev-type energy inequality for the exclusion process, which is analogous to <a href="http://mathworld.wolfram.com/DirichletsPrinciple.html">Thomson's (or Dirichlet's) principle</a> for random walks / electric networks.
 It builds upon the marvelous <a href="http://www.ams.org/journals/jams/2010-23-03/S0894-0347-10-00659-4/home.html">"octopus inequality" proved by Caputo, Liggett, and Richthammer in 2009</a>.<br>
-</p>
 </td>
 </tr>
 
@@ -494,14 +478,12 @@ with Luke G. Rogers, Loren Anderson, Ulysses Andrews, Antoni Brzoska, Aubrey Cof
 <tr>
 <td></td>
 <td>
-<p id="hide">
 <br>
 <a href="SGLadderNsteps.png"><img src="SGLadderNsteps.png" height="150"></a><br>
 We give a "fractal spin" on the classic infinite ladder circuit discussed in <a href="http://www.feynmanlectures.caltech.edu/II_22.html">the Feynman Lectures on Physics</a>. 
 For the Feynman-Sierpinski ladder circuit (pictured) we can rigorously prove the convergence of the effective impedances using the dynamics of <a href="https://en.wikipedia.org/wiki/M%C3%B6bius_transformation">M&ouml;bius transformations</a>.<br>
 <a href="https://arxiv.org/abs/1701.08039">A refinement of our results (concerning the energy measure) on the F-S ladder circuit</a> was attained recently by <a href="http://www.math.uconn.edu/~alonsoruiz/">Patricia Alonso-Ruiz</a>.<br>
 <br></br>
-</p>
 </td>
 </tr>
 
@@ -517,13 +499,11 @@ For the Feynman-Sierpinski ladder circuit (pictured) we can rigorously prove the
 <tr>
 <td></td>
 <td>
-<p id="hide">
 <br>
 We study wave propagation on the pq-model, a self-similar inhomogeneous wave medium on the unit interval, with an initial approximate delta pulse at the origin.
 Using the spectral resolution of the Laplacian (via spectral decimation), we prove that the solution of the wave equation can be approximated uniformly in space by a Fourier series, up to some cutoff time.
 This gives a quantitative glimpse into the <a href="https://arxiv.org/abs/1111.2938">"infinite speed of wave propagation" phenomenon on fractals</a>.
 <br></br>
-</p>
 </td>
 </tr>
 
@@ -541,13 +521,11 @@ This gives a quantitative glimpse into the <a href="https://arxiv.org/abs/1111.2
 <tr>
 <td></td>
 <td>
-<p id="hide">
 <br>
 In this paper we study a coupled ODE system in two complex dimensions that admits finite-time blow-up solutions. 
 We show analytically and numerically that stabilization can be achieved by adding a suitable Brownian noise, and that the resulting system of SDEs is ergodic. 
 The proof uses Girsanov theorem to effect a time change from our 2D system to a quasi-1D-system similar to the one studied by Herzog and Mattingly.
 <br></br>
-</p>
 </td>
 </tr>
 
