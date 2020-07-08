@@ -16,6 +16,15 @@
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+jQuery(function() {
+  jQuery('#showall').click(function() {
+    jQuery('.targetDiv').toggle();
+  });
+});
+</script>
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -57,7 +66,25 @@
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
+
+.buttons {
+  display:inline-block;
+  padding: 4px;
+  border-radius: 10%;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  background-color: #993300;
+}
+
+#myDIV {
+  width: 100%;
+  padding: 10px 0;
+  text-align: left;
+  display: none;
+}
 </style>
+
 
 
 
@@ -196,6 +223,9 @@ While the topics look disparate, everything for me comes down to careful underst
 <a name="papers"><h2>Research papers <small>(see also my pages on <a href="http://arxiv.org/a/chen_j_5">arXiv</a>, <a href="http://www.ams.org/mathscinet/MRAuthorID/1058850">MathSciNet</a>, <a href="https://zbmath.org/authors/?q=ai:chen.joe-p">zbMATH</a>, <a href="https://orcid.org/0000-0001-6749-439X">ORCID</a>)</small></h2>
 <h4><font style="background-color:red" color="white">&#9671</font> <font color="red">indicates work involving undergraduate student(s)</font></h4>
 
+<div class="buttons">
+<a id="showall">Show/Hide abstracts</a>
+</div>
 
 <table>
 <table style="width:100%">
@@ -212,6 +242,7 @@ While the topics look disparate, everything for me comes down to careful underst
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 This paper is a continuation of <a href="#paper16"><font style="background-color:black" color="white">16</font></a>, and the focus is on characterizing the non-equilibrium density fluctuations when the 3 reservoir rates are not identical.
 More precisely, under diffusive scaling we establish: the hydrostatic limit for the stationary measures of the discrete processes;
 and subsequential convergence of non-equilibrium density fluctuations, which can be upgraded to full convergence to an Ornstein-Uhlenbeck process if the initial-time fluctuations are centered Gaussian.
@@ -224,6 +255,7 @@ Unlike the 1D case, it is unclear how to interpret the second term above, the co
 <br>
 To prove all the above, we need to carefully estimate the two-point correlation functions in the exclusion process, and bring inputs from analysis on fractals, Dirichlet forms, and \(\Gamma\)-calculus.
 <br></br>
+</div>
 </td>
 </tr>
 
@@ -234,13 +266,14 @@ To prove all the above, we need to carefully estimate the two-point correlation 
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 The \(\varepsilon\)-mixing time of an ergodic Markov chain is the first time the total variation distance between the chain distribution and the stationary distribution becomes less than \(\varepsilon\).
 Given a sequence of Markov chains with \(\varepsilon\)-mixing times \(\{t_N^{\rm mix}(\varepsilon)\}_N\), we say that they exhibit <i>cutoff</i> if there exists a sequence of time scales \(\{t_N\}_N\) such that for every \(\varepsilon\in (0,1)\), \(t_N^{\rm mix}(\varepsilon) / t_N \to 1\).  
 In this paper we prove a general theorem on cutoffs for the symmetric exclusion processes on graphs with open boundaries, under the natural assumption that the graphs converge geometrically and spectrally to a compact metric measure space with Dirichlet boundary condition.
 Our theorem is valid on a variety of settings including, but not limited to, the discrete hypercube in \(\mathbb{R}^d\) for every dimension \(d\); self-similar fractal spaces; and products thereof.
 The proof is by construction of a "cutoff martingale," the analysis thereof using \(L^2\)-spectral methods, and a coupling between dual exclusion processes.<br></br>
 <a href="CutoffSquare.png"><img src="CutoffSquare.png" height="240"></a><br>
-<br></br>
+</div>
 </td>
 </tr>
 
@@ -256,9 +289,10 @@ The proof is by construction of a "cutoff martingale," the analysis thereof usin
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 This paper gives a non-technical summary and interpretation of the main results from <a href="#paper16"><font style="background-color:black" color="white">16</font></a> and <font style="background-color:black" color="white">P1</font>,
 and also extends the analysis of <font style="background-color:black" color="white">P1</font> to mixed boundary reservoir dynamics.
-<br></br>
+</div>
 </td>
 </tr>
 
@@ -269,9 +303,10 @@ and also extends the analysis of <font style="background-color:black" color="whi
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 In this paper we prove a general theorem on cutoffs for the symmetric exclusion process and the interchange process on graphs with no boundary (torus) or with closed (Neumann) boundaries.
 The theorem works in any dimension.
-<br></br>
+</div>
 </td>
 </tr>
 
@@ -304,11 +339,13 @@ The theorem works in any dimension.
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 In this paper we provide a recursive construction of the magnetic spectrum on the Sierpinski gasket under uniform magnetic field, thereby solving the "Hofstadter-Sierpinski spectral problem" in its entirety.
 The renormalization map is a 3-parameter map involving non-rational functions. (As far as we know, this is the first time spectral decimation has been carried out with non-rational functions. We succeeded in carrying out the decimation in all scenarios, including the exceptional set for spectral decimation.)
 In special cases, we can also compute determinants of the magnetic Laplacians on the gasket, which induce a random spatial process called the cycle-rooted spanning forest (CRSF) process, cf. <a href="https://projecteuclid.org/euclid.aop/1318940787">Rick Kenyon's 2011 Annals of Probability paper</a>.
 <br></br>
 <a href="new_spectrum.png"><img src="new_spectrum.png" height="170"></a>
+</div>
 </td>
 </tr>
 
@@ -323,11 +360,13 @@ In special cases, we can also compute determinants of the magnetic Laplacians on
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 In this paper we prove a LLN and a CLT for the particle density in the boundary-driven exclusion process on the Sierpinski gasket.
 Depending on the strength of the boundary reservoirs' dynamics, the particle density evolves according to the heat equation with Dirichlet, Robin, or Neumann boundary condition.
 In the equilibrium setting, we prove that the density fluctuations satisfy the Ornstein-Uhlenbeck equation with the corresponding boundary condition.<br>
 <a href="boundaryPT.png"><img src="boundaryPT.png" height="220"></a><br>
 </p>
+</div>
 </td>
 </tr>
 
@@ -340,9 +379,11 @@ In the equilibrium setting, we prove that the density fluctuations satisfy the O
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 In this paper I prove, on every strongly recurrent weighted graph, the coarse-graining arguments needed to pass from the microscopic observables (in the exclusion process) to the corresponding macroscopic averages.
 The two-blocks estimate is based on the moving particle lemma established in paper <a href="#paper9"><font style="background-color:black" color="white">9</font></a>.<br>
 <a href="SSEPBoundaryAnimation.gif"><img src="SSEPBoundaryAnimation.gif" height="134"></a><br>
+</div>
 </td>
 </tr>
 
@@ -372,6 +413,7 @@ The two-blocks estimate is based on the moving particle lemma established in pap
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 In this paper we solve the rotor-router aggregation problem and the abelian sandpile growth problem on the graphical Sierpinski gasket (SG) when particles are launched from the corner vertex.
 The sandpile growth problem is solved exactly via a renormalization scheme involving self-similar sandpile tiles.
 In the process we also prove the identity elements of the sandpile groups of subgraphs of SG (with two different boundary conditions).
@@ -381,6 +423,7 @@ In the process we also prove the identity elements of the sandpile groups of sub
 <a href="https://github.com/jkudlerflam/AutomataSG/blob/master/rotor_router_CCW.gif"><img src="https://github.com/jkudlerflam/AutomataSG/blob/master/rotor_router_CCW.gif?raw=true" height="220"></a>
 <a href="https://github.com/jkudlerflam/AutomataSG/blob/master/ASM_SG.gif"><img src="ASM_SG.gif" height="220"></a>
 <a href="Jumpplot.png"><img src="Jumpplot.png" height="220"></a>
+</div>
 </td>
 </tr>
 
@@ -406,10 +449,11 @@ In the process we also prove the identity elements of the sandpile groups of sub
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 In this paper we prove that starting from a corner vertex of SG, an internal diffusion-limited aggregation process (where successive i.i.d. random walks deposit upon first exit from the previous cluster) fills balls in the graph metric with probability 1.<br><br>
 <a href="IDLASG.gif"><img src="IDLA_SG.gif" height="200"></a><br></br>
 See also <a href="https://arxiv.org/abs/1702.08370">the shape theorem for divisible sandpiles on SG</a> by Huss and Sava-Huss.<br>
-<br></br>
+</div>
 </td>
 </tr>
 
@@ -466,11 +510,13 @@ and <a href="https://alexander-teplyaev.uconn.edu">Alexander Teplyaev</a>.
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 <br>
 <a href="pqeigvtreeD.jpg"><img src="pqeigvtreeD.jpg" height="100"></a><br><br>
 In this paper we give rigorous meaning to regularized logarithmic Laplacian determinants on several fractal graphs, using properties of the spectral <a href="https://en.wikipedia.org/wiki/Zeta_function_(operator)">zeta function</a>.
 In two examples (the double-sided SG and the double-sided pq model) we find that the logarithmic discrete graph Laplacian determinant has a leading-order term whose coefficient is the <a href="https://arxiv.org/abs/math/0212165">asymptotic complexity constant in the enumeration of spanning trees</a>, and whose lagging term corresponds to the regularized logarithmic Laplacian determinant.
 Our results generalize those of <a href="https://projecteuclid.org/euclid.nmj/1273496987">Chinta, Jorgenson, and Karlsson on the discrete tori</a>, and have implications for quantum fields and statistical mechanics on fractals.
+</div>
 </td>
 </tr>
 
@@ -492,12 +538,14 @@ Our results generalize those of <a href="https://projecteuclid.org/euclid.nmj/12
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 <br>
 <a href="MPL.png"><img src="MPL.png" height="400"></a>
 <br>
 I prove in this paper a Sobolev-type energy inequality for the exclusion process, which is analogous to <a href="http://mathworld.wolfram.com/DirichletsPrinciple.html">Thomson's (or Dirichlet's) principle</a> for random walks / electric networks.
 It builds upon the marvelous <a href="http://www.ams.org/journals/jams/2010-23-03/S0894-0347-10-00659-4/home.html">"octopus inequality" proved by Caputo, Liggett, and Richthammer in 2009</a>.
 <br></br>
+</div>
 </td>
 </tr>
 
@@ -516,12 +564,14 @@ with Luke G. Rogers, Loren Anderson, Ulysses Andrews, Antoni Brzoska, Aubrey Cof
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 <br>
 <a href="SGLadderNsteps.png"><img src="SGLadderNsteps.png" height="150"></a><br>
 We give a "fractal spin" on the classic infinite ladder circuit discussed in <a href="http://www.feynmanlectures.caltech.edu/II_22.html">the Feynman Lectures on Physics</a>. 
 For the Feynman-Sierpinski ladder circuit (pictured) we can rigorously prove the convergence of the effective impedances using the dynamics of <a href="https://en.wikipedia.org/wiki/M%C3%B6bius_transformation">M&ouml;bius transformations</a>.<br>
 <a href="https://arxiv.org/abs/1701.08039">A refinement of our results (concerning the energy measure) on the F-S ladder circuit</a> was attained recently by <a href="http://www.math.uconn.edu/~alonsoruiz/">Patricia Alonso-Ruiz</a>.<br>
 <br></br>
+</div>
 </td>
 </tr>
 
@@ -537,10 +587,12 @@ For the Feynman-Sierpinski ladder circuit (pictured) we can rigorously prove the
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 We study wave propagation on the pq-model, a self-similar inhomogeneous wave medium on the unit interval, with an initial approximate delta pulse at the origin.
 Using the spectral resolution of the Laplacian (via spectral decimation), we prove that the solution of the wave equation can be approximated uniformly in space by a Fourier series, up to some cutoff time.
 This gives a quantitative glimpse into the <a href="https://arxiv.org/abs/1111.2938">"infinite speed of wave propagation" phenomenon on fractals</a>.
 <br></br>
+</div>
 </td>
 </tr>
 
@@ -558,9 +610,11 @@ This gives a quantitative glimpse into the <a href="https://arxiv.org/abs/1111.2
 <tr>
 <td></td>
 <td>
+<div id="myDIV" class="targetDiv">
 In this paper we study a coupled ODE system in two complex dimensions that admits finite-time blow-up solutions. 
 We show analytically and numerically that stabilization can be achieved by adding a suitable Brownian noise, and that the resulting system of SDEs is ergodic. 
 The proof uses Girsanov theorem to effect a time change from our 2D system to a quasi-1D-system similar to the one studied by Herzog and Mattingly.
+</div>
 </td>
 </tr>
 
