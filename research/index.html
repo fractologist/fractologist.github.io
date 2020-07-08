@@ -38,12 +38,20 @@ ul {
   background-image: linear-gradient(to right, #993300 , #ffffff); /* Standard syntax (must be last) */
 }
 
+ul.sub {
+  background-image: linear-gradient(to right, #f5deb3 , #ffffff); /* Standard syntax (must be last) */
+}
+
 li {
   float: left;
   display: inline;
   font-size: 18px;
   font-weight: bold;
   border-right: 1px solid #bbb;
+}
+
+li.hilite {
+  background-color: #111;
 }
 
 
@@ -55,8 +63,20 @@ li a {
   text-decoration: none;
 }
 
+li.sub a {
+  display: block;
+  color: #993300;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
 li a:hover {
   background-color: #111;
+}
+
+li.sub a:hover {
+  color: white;
 }
 
 .collapsible {
@@ -130,12 +150,16 @@ Joe P. Chen's Research Page
 
 <ul>
  <li><a href="../index.html">Home</a> </li>
- <li><a>Research</a></li>
- <li><a href="teaching/index.html">Teaching</a> </li>
- <li><a href="scheduler.html">Scheduler</a> </li>
+ <li class="hilite"><a>Research</a></li>
+ <li><a href="../teaching/index.html">Teaching</a> </li>
+ <li><a href="../scheduler.html">Scheduler</a> </li>
 </ul>
 
-<h3><a href="#papers">Research papers</a> | <a href="travel">Professional travel <img src="open_in_new_window.png" height="15"></a> | <a href="organizers">Scientific organization <img src="open_in_new_window.png" height="15"></a>  </h3>
+<ul class="sub">
+ <li class="sub"><a href="#papers">Research papers</a></li>
+ <li class="sub"><a href="travel">Professional travel</a></li>
+ <li class="sub"><a href="organizers">Scientific organization</a></li>
+</ul>
 
 <h2><font color="blue">Interacting particle systems, (stochastic) PDEs, sandpiles, and fractals</font></h2>
 
