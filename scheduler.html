@@ -4,6 +4,116 @@ width: 800px;
 }
 </style>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul {
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #993300;
+  background-image: linear-gradient(to right, #993300 , #ffffff); /* Standard syntax (must be last) */
+}
+
+ul.sub {
+  background-image: linear-gradient(to right, #f5deb3 , #ffffff); /* Standard syntax (must be last) */
+}
+
+li {
+  float: left;
+  display: inline;
+  font-size: 18px;
+  font-weight: bold;
+  border-right: 1px solid #bbb;
+}
+
+li.hilite {
+  background-color: #111;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+li.sub a {
+  display: block;
+  color: #993300;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+li.sub a:hover {
+  color: white;
+}
+
+.collapsible {
+  background-color: #993300;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  background-image: linear-gradient(to right, #993300 , #cf5138); /* Standard syntax (must be last) */
+}
+
+.active, .collapsible:hover {
+  background-color: #331100;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.buttons {
+  display:inline-block;
+  padding: 4px;
+  border-radius: 10%;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  background-color: #993300;
+}
+
+#myDIV {
+  width: 100%;
+  padding: 10px 0;
+  text-align: left;
+  display: none;
+}
+</style>
+
 
 <html>
 
@@ -18,6 +128,7 @@ width: 800px;
 
 </script>
 
+
 <title>Joe P. Chen's Scheduler</title>
 
 <body>
@@ -26,6 +137,14 @@ width: 800px;
 
 
 <h2><a href="index.html">Joe P. Chen</a>'s Appointment Scheduler</h2>
+
+
+<ul>
+ <li><a href="index.html">Home</a> </li>
+ <li><a href="research/index.html">Research</a></li>
+ <li><a href="teaching/index.html">Teaching</a> </li>
+ <li class="hilite"><a>Scheduler</a> </li>
+</ul>
 
 <!--
 <h3>Spring 2020 Final Exam Period Office Hours</h3>
