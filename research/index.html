@@ -28,6 +28,37 @@ jQuery(function() {
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+ul {
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #993300;
+  background-image: linear-gradient(to right, #993300 , #ffffff); /* Standard syntax (must be last) */
+}
+
+li {
+  float: left;
+  display: inline;
+  font-size: 18px;
+  font-weight: bold;
+  border-right: 1px solid #bbb;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
 .collapsible {
   background-color: #993300;
   color: white;
@@ -97,6 +128,13 @@ Joe P. Chen's Research Page
 <body>
 <h2><a href="../">Joe P. Chen</a>'s Research Page</h2>
 
+<ul>
+ <li><a href="../index.html">Home</a> </li>
+ <li><a>Research</a></li>
+ <li><a href="teaching/index.html">Teaching</a> </li>
+ <li><a href="scheduler.html">Scheduler</a> </li>
+</ul>
+
 <h3><a href="#papers">Research papers</a> | <a href="travel">Professional travel <img src="open_in_new_window.png" height="15"></a> | <a href="organizers">Scientific organization <img src="open_in_new_window.png" height="15"></a>  </h3>
 
 <h2><font color="blue">Interacting particle systems, (stochastic) PDEs, sandpiles, and fractals</font></h2>
@@ -111,11 +149,15 @@ Joe P. Chen's Research Page
 
 
 <h5>Click on each image for a high-res version. From left to right:
-<ul>
-<li>A standard deck of cards arranged in a 4x13 array. (Courtesy of Rodrigo Marinho.) 
-<li>The identity element of the <a href="https://en.wikipedia.org/wiki/Abelian_sandpile_model#Sandpile_group">sandpile group</a> of the level-5 Sierpinski gasket graph with 2 sinks. (Blue = 3, magenta = 0.) Observe the concatenation of the <a href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_curve#Arrowhead_curve">Sierpinski arrowhead curves</a> in blue!  
-<li>The "periodic table" of abelian sandpile growth on the Sierpinski gasket, started from the bottom-left corner vertex.
-</ul>
+<p>
+A standard deck of cards arranged in a 4x13 array. (Courtesy of Rodrigo Marinho.) 
+</p>
+<p>
+The identity element of the <a href="https://en.wikipedia.org/wiki/Abelian_sandpile_model#Sandpile_group">sandpile group</a> of the level-5 Sierpinski gasket graph with 2 sinks. (Blue = 3, magenta = 0.) Observe the concatenation of the <a href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_curve#Arrowhead_curve">Sierpinski arrowhead curves</a> in blue!  
+</p>
+<p>
+The "periodic table" of abelian sandpile growth on the Sierpinski gasket, started from the bottom-left corner vertex.
+</p>
 </h5>
 
 <button class="collapsible">Description of My Research</button>
@@ -173,11 +215,19 @@ the Research Council of Colgate University (Major grant 2017-18, Picker Research
 <button class="collapsible">Recent Presentations</button>
 <div class="content">
 <p>
-<li><a href="AMSBinghamton_Guo_Oct2019.pdf">Spectral decimation of the magnetic Laplacian on the Sierpinski gasket</a> <i>(AMS Sectional Meeting @ Binghamton U, Oct '19, written and delivered by Ruoyu Guo '19)</i>.
-<li><a href="SPA_July2019.pdf">Nonequilibrium fluctuations in the boundary-driven exclusion process on a resistance space</a> <i>(Stochastic Processes & their Applications conference @ Northwestern University, July '19)</i>.
-<li><a href="LeidenMIPS_May2019.pdf">Random walks, electric networks, moving particle lemma, and hydrodynamic limits</a> <i>(Leiden Most Informal Probability Seminar, May '19)</i>.
-<li><a href="UChicagoApr2019.pdf">Laplacian growth and sandpiles on the Sierpinski gasket</a> <i>(UChicago Probability Seminar, Apr '19)</i>.
-<li><a href="http://www.birs.ca/events/2015/5-day-workshops/15w5083/videos/watch/201509291203-Chen.html">[VIDEO] An abstract version of Bohr’s semiclassical asymptotic formula, with application to fractal spaces</a> <i>(Slightly dated, BIRS-CMO Oaxaca, Sep ‘15)</i>.
+<a href="AMSBinghamton_Guo_Oct2019.pdf">Spectral decimation of the magnetic Laplacian on the Sierpinski gasket</a> <i>(AMS Sectional Meeting @ Binghamton U, Oct '19, written and delivered by Ruoyu Guo '19)</i>.
+</p>
+<p>
+<a href="SPA_July2019.pdf">Nonequilibrium fluctuations in the boundary-driven exclusion process on a resistance space</a> <i>(Stochastic Processes & their Applications conference @ Northwestern University, July '19)</i>.
+</p>
+<p>
+<a href="LeidenMIPS_May2019.pdf">Random walks, electric networks, moving particle lemma, and hydrodynamic limits</a> <i>(Leiden Most Informal Probability Seminar, May '19)</i>.
+</p>
+<p>
+<a href="UChicagoApr2019.pdf">Laplacian growth and sandpiles on the Sierpinski gasket</a> <i>(UChicago Probability Seminar, Apr '19)</i>.
+</p>
+<p>
+<a href="http://www.birs.ca/events/2015/5-day-workshops/15w5083/videos/watch/201509291203-Chen.html">[VIDEO] An abstract version of Bohr’s semiclassical asymptotic formula, with application to fractal spaces</a> <i>(Slightly dated, BIRS-CMO Oaxaca, Sep ‘15)</i>.
 </p>
 </div>
 
