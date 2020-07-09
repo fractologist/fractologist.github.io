@@ -16,16 +16,6 @@
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-jQuery(function() {
-  jQuery('#showall').click(function() {
-    jQuery('.targetDiv').fadeToggle();
-  });
-});
-</script>
-
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 ul {
@@ -313,8 +303,19 @@ While the topics look disparate, everything for me comes down to careful underst
 <h4><font style="background-color:red" color="white">&#9671</font> <font color="red">indicates work involving undergraduate student(s)</font></h4>
 
 <div class="buttons">
-<a id="showall">Show/Hide abstracts &#8609;</a>
+<a id="showall">Show abstracts</a>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+jQuery(function() {
+	jQuery('#showall').click(function() {
+     		jQuery(this).text(function(i, v){
+		return v === 'Show abstracts' ? 'Hide abstracts' : 'Show abstracts'
+		})
+		jQuery('.targetDiv').fadeToggle();
+	})
+  });
+</script>
 
 <table>
 <table style="width:100%">
